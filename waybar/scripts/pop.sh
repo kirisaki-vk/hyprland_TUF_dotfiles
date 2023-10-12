@@ -1,0 +1,1 @@
+footclient --app-id floating_shell --window-size-chars 82x25 "$@"

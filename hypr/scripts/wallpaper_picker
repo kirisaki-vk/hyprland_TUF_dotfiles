@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Define a var for the wall folder
+
+wallpapaper_folder=$HOME/Pictures/Wallpapers
+
+wallpaper_location="$(ls $wallpapaper_folder | wofi --show dmenu)"
+
+actual_background="$wallpapaper_folder/$wallpaper_location"
+
+load_wp()
+{  
+  swww img --transition-type wipe --transition-angle 30 --transition-step 90 $actual_background
+}
+
+#perform cleanup and exit
+if ! swww query; then
+    swww init
+fi
+
+load_wp

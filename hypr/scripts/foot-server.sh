@@ -1,0 +1,1 @@
+[ -x "$(command -v foot)" ] && ~/.config/hypr/scripts/foot.sh --server

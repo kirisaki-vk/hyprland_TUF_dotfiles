@@ -1,0 +1,3 @@
+#!/bin/bash
+# my first attempt to resolve the gnome and hyprland portal conflict
+killall xdg-desktop-portal-gnome
